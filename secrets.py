@@ -1,3 +1,3 @@
 senderemail = 'hark.jarvis@gmail.com'
-epwd = '123@Jarvis'
+epwd = '********'
 to = 'rajesh.chinnurockz@gmail.com'
