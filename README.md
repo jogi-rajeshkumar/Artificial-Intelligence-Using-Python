@@ -1,118 +1,130 @@
-# 🤖 Jarvis – AI Virtual Assistant in Python
 
-Welcome to **Jarvis**, a Python-based AI voice assistant developed as a final year project. This assistant performs a variety of intelligent tasks triggered by your **voice commands**, including speaking responses, opening applications, fetching weather updates, generating passwords, and even interacting with WhatsApp.
+# 🤖 Jarvis - AI Virtual Assistant in Python
 
----
-
-## 🚀 Features
-
-- 🗣️ **Text to Speech (TTS)** using `pyttsx3`
-- 🎙️ **Custom Voice Selection** (Male/Female)
-- ⏰ **Date & Time Announcement**
-- 👋 **Personalized Greeting & Wishing**
-- 📲 **Send WhatsApp Messages** via browser automation
-- 🔍 **Search on Wikipedia & Google**
-- 📺 **Play YouTube Videos** via `pywhatkit`
-- 🌦️ **Get Live Weather Updates** using OpenWeatherMap API
-- 📰 **Fetch News Headlines** using NewsAPI
-- 📋 **Read Selected Text** from clipboard (`clipboard`)
-- 📂 **Open Applications & Folders** (e.g., VS Code, Downloads)
-- 😂 **Tell Random Jokes** using `pyjokes`
-- 🖼️ **Take Screenshots** using `pyautogui`
-- 🧠 **Remember Information** (Save & Recall Notes)
-- 🔐 **Password Generator** (Randomized secure password)
-- 🎲 **Flip a Coin / Roll a Dice**
-- ⚡ **CPU & Battery Status Monitor** using `psutil`
-- 💤 **Wake Word Detection** using `nltk`
+Jarvis is a beginner-friendly AI assistant created using Python. It interacts with users via voice commands and performs various tasks like reading news, sending WhatsApp messages, telling the weather, playing YouTube videos, and more. It uses Python libraries such as `pyttsx3`, `pyautogui`, `wikipedia`, and `pywhatkit` to deliver these features.
 
 ---
 
-## 🛠️ Installation Guide
+## 🎥 Demo
 
-### 1. Clone the Repository
+▶️ [Watch the Demo on YouTube](https://youtu.be/aX8kxh4e52k)  
+  
+---
+
+## 🧠 Features
+
+- ✅ Text-to-Speech
+- ⏰ Tell Time and Date
+- 👋 Greetings Based on Time of Day
+- 💬 Send WhatsApp Messages
+- 📖 Wikipedia Search
+- 🔎 Google Search
+- ▶️ YouTube Video Playback
+- 🌤️ Live Weather Updates
+- 🗞️ News Headlines via News API
+- 📋 Read Clipboard Text
+- 📁 Open Apps and Folders
+- 😂 Jokes with PyJokes
+- 📸 Take Screenshots
+- 🧠 Remember Things for You
+- 🔐 Password Generator
+- 🎲 Flip Coin and Roll Dice
+- 🔋 CPU and Battery Monitoring
+- 🛎 Wake Word Detection (e.g., "Jarvis")
+
+---
+
+## 🛠 Setup Instructions
+
+### 1. Prerequisites
+
+- Python 3.x
+- Visual Studio Code or any code editor
+- Internet Connection for API access
+
+### 2. Clone the Repository
 
 ```bash
 git clone https://github.com/yourusername/Jarvis-AI-Assistant.git
 cd Jarvis-AI-Assistant
 ```
 
-### 2. Install Dependencies
-
-Install all required libraries:
+### 3. Install Dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install pyttsx3 pyautogui wikipedia pywhatkit clipboard newsapi-python pyjokes psutil nltk
 ```
 
-Or install manually if `requirements.txt` is not provided:
+Then run in Python shell:
 
-```bash
-pip install pyttsx3 pyautogui wikipedia pywhatkit requests clipboard newsapi-python pyjokes psutil nltk
+```python
+import nltk
+nltk.download('punkt')
 ```
 
-### 3. Setup API Keys
+---
 
-- 🔑 **[OpenWeatherMap API](https://openweathermap.org/)**
-- 🔑 **[News API](https://newsapi.org/)**
+## 🔑 API Configuration
 
-Update the keys in the script wherever applicable.
+### OpenWeatherMap API
 
-### 4. Run the Assistant
+- Sign up at https://openweathermap.org
+- Get your API key and replace it in the code where weather data is fetched
+
+### NewsAPI
+
+- Register at https://newsapi.org
+- Replace the placeholder key in the `news()` function
+
+---
+
+## 🚀 How to Run
+
+1. Replace API keys in the script
+2. Run the script:
 
 ```bash
 python Jarvis.py
 ```
 
+Say commands like:
+
+- "Jarvis, what's the weather in London?"
+- "Jarvis, tell me a joke"
+- "Jarvis, open VS Code"
+- "Jarvis, search YouTube for relaxing music"
+
 ---
 
-## 📁 Folder Structure
+## 📂 Project Structure
 
-```text
-Jarvis-AI-Assistant/
-├── Jarvis.py                # Main voice assistant logic
-├── data.txt                 # Memory file for 'remember' feature
-├── /screenshots             # Folder to store captured screenshots
-├── requirements.txt         # List of dependencies
-├── README.md                # Project documentation (this file)
-└── ...
+```
+Jarvis/
+├── Jarvis.py
+├── data.txt
+├── README.md
+└── requirements.txt (optional)
 ```
 
 ---
 
-## 🧰 Tools & Technologies
+## 🗣️ Customization
 
-- **Python 3.x**
-- **Visual Studio Code**
-- **Wallpaper Engine** (for UI simulation)
-
----
-
-## 🔮 Future Enhancements
-
-- 📡 Integration with **IoT Devices** (Smart Home control)
-- 🖥️ GUI support using **Tkinter** or **PyQt5**
-- 🤖 Improved NLP using **Transformers**
-- 📈 Real-time **Sentiment Analysis**
-
----
-
-## 👨‍💻 Developed By
-
-**Rajesh Kumar Jogi**
-
-Final Year Project for B.Tech/B.Sc in Computer Science
+- Change voice: Use `getvoices(1)` for male or `getvoices(2)` for female
+- Modify `wakeword` from "Jarvis" to any keyword of your choice
+- Add more voice commands using `elif` blocks
+- Optional UI can be built using libraries like `tkinter` or `PyQt`
 
 ---
 
 ## 📜 License
 
-This project is licensed under the **MIT License**. See the `LICENSE` file for details.
+This project is open for learning and personal use. Do not use it commercially without permission.
 
 ---
 
-## 🙌 Feedback & Contributions
+## 👨‍💻 Author
 
-Have suggestions or want to improve Jarvis?  
-You're welcome to **fork**, **submit pull requests**, or **open issues** in this repository.
+Built with ❤️ using Python.
 
-Let's build the future together! 💡
+---
