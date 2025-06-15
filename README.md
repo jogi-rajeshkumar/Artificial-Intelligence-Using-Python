@@ -123,8 +123,7 @@ This project is open for learning and personal use. Do not use it commercially w
 
 ---
 
-## 👨‍💻 Author
+## ✨ Author
 
-Built with ❤️ using Python.
+**Rajesh Kumar Jogi**  
 
----
